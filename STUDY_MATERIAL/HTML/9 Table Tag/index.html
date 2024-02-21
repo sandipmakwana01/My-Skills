@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+</head>
+<body>
+    <!-- <th> (table header) -->
+    <!-- <tr> (table row) -->
+    <!-- <td> (table data) -->
+    <!-- valign="bottom" -->
+    <!-- cellspacing="5" cellpadding="10" -->
+    <!-- rowspan="3" colspan="3 -->
+    <!-- 
+    <thead> tag is used to group the header content in a table.
+    <tbody> tag is used to group the body content in a table.
+    <tfoot> tag is used to group the footer content in a table.
+     -->
+
+
+    <table border="3" bgcolor="pink" align="center" width="500px" height="230px" cellspacing="5" cellpadding="10">
+        <caption>Student Record</caption>
+        <thead>
+            <tr >
+                <th >Sr.No</th>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>1001</td>
+                <td>John</td>
+                <td bgcolor="red">Red</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1003</td>
+                <td align="center">Peter</td>
+                <td rowspan="3">Blue</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1003</td>
+                <td>Henry</td>
+                <td >Green</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1003</td>
+                <td>Henry</td>
+                <td >Green</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1003</td>
+                <td>Henry</td>
+                <td >Green</td>
+            </tr>
+        </tbody>
+        <tfoot bgcolor="yellow">
+            <tr >
+                <td >Total</td>
+                <td colspan="3" ></td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+
+
+    
+    <table border="1" align="center" width="80%" cellpadding="10px" cellspacing="10px">
+        <tr align="right">
+            <td valign="top">Nunc et eros mi. Nam purus diam</td>
+            <td>Sed non massa nec augue viverra blandit sed ac mauris. Aliquam pellentesque pulvinar quam</td>
+        </tr>
+        <tr>
+            <td height="400px" valign="top" align="right">magna porttitor sed. Vivamus condimentum </td>
+            <td valign="bottom">Ut lobortis quis lacus vel viverra. Nullam tempor ligula at urna condimentum ultrices. Ut sodales ornare faucibus. Ut augue neque, interdum sit amet efficitur euismod</td>
+        </tr>
+    </table>
+    <hr>
+
+
+
+
+    <table width="80%" border="1" cellpadding="10px" cellspacing="0" align="center">
+        <tr bgcolor="pink">
+            <td colspan="2">
+                <h1>Site Name</h1>
+            </td>
+        </tr>
+        <tr bgcolor="orange">
+            <td colspan="2">
+                <a href="">Home</a> | <a href="">About Us</a> | <a href="">Gallery</a> | <a href="">FAQ</a> | <a href="">Contact Us</a>
+            </td>
+        </tr>
+        <tr>
+            <td width="80%">
+                <h2>Sub Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel turpis maximus ex vulputate venenatis cursus in justo. Donec euismod sagittis vehicula. Mauris vel fermentum neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed interdum placerat molestie. Etiam vestibulum, dui vel vulputate sollicitudin, quam est pretium justo, sit amet gravida nisl quam ut arcu. Aenean eu viverra tellus. Maecenas leo orci, ullamcorper laoreet feugiat vel, consectetur eget leo. Nulla fringilla, leo non finibus congue, sem massa faucibus felis, vitae sollicitudin diam nisi eu ante. Nam eu quam malesuada, vehicula tellus eu, consequat eros. Nam mattis est quis dolor ultricies bibendum. Maecenas eget tellus ac diam consequat sollicitudin. In feugiat erat varius eros eleifend posuere. Proin finibus vestibulum ante id tempor. Fusce sollicitudin nunc a urna varius mollis non sed justo. Suspendisse consectetur odio interdum libero vestibulum, non consequat est suscipit.</p>
+                <p>Nam gravida ligula non ullamcorper suscipit. Praesent ante nisl, vestibulum eget nibh quis, interdum ornare tortor. In ac erat pharetra odio egestas viverra. Duis consectetur tincidunt metus ornare hendrerit. Nullam nulla velit, lacinia at lacus id, imperdiet dapibus purus. Nam non malesuada eros, vel congue tortor. Cras massa orci, mattis aliquet feugiat a, molestie eu nunc. Aenean suscipit sagittis mi sit amet tempus. Cras porta, augue sit amet scelerisque suscipit, sem ligula vehicula justo, nec consectetur tortor mauris quis orci. Etiam egestas mattis justo, ut iaculis nulla interdum sed. Integer feugiat est at nisl sagittis tincidunt.</p>
+                
+            </td>
+            <td valign="top">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr bgcolor="pink">
+            <td colspan="2">
+                @copyright sitename 2018.
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
