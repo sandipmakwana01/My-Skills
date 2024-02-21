@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* flex propertise:- 
+      
+        flex-direction: ;
+        - (use in parent)
+        - row (defualt)
+        - row-reverse
+        - column
+        - column-reverse
+        flex-wrap: ;
+        - (use in parent)
+        - nowrap (defualt)
+        - wrap
+        - wrap-reverse
+        flex-flow: ;
+        - (use in parent)
+        - <flex-direction><flex-wrap>
+
+        flex-grow: ;
+        - (use in child)
+        flex-shrink: ;
+        - (use in child)
+        - use 0(0 means no shrink)
+        flex-basis: ;
+        - (use in child)
+        - px 
+        - auto
+        flex: ;
+        - (use in child)
+        - <flex-grow><flex-shrink><flex-basis>
+
+        justify-content: ;
+        - (use in parent)
+        - flex-start (defualt)
+        - flex-end
+        - center
+        - space-around
+        - space-between
+        - space-evenly
+        align-items: ;
+        - (use in parent)
+        - (use single row)
+        - flex-start 
+        - flex-end
+        - center
+        - stretch (defualt)
+        - baseline
+        align-content: ;
+        - (use in parent)
+        - (use double row)
+        - flex-start (defualt)
+        - flex-end
+        - center
+        - stretch
+        - space-around
+        - space-between
+        - space-evenly
+        align-self: ;
+        - (use in child)
+        - auto
+        - flex-start 
+        - flex-end
+        - center
+        - stretch (defualt)
+        - baseline
+        
+        order: ;
+      */
+      .parent {
+        border: 2px solid;
+        padding: 10px;
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+      }
+      .child {
+        border: 2px solid;
+        margin: 10px;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+  </body>
+</html>

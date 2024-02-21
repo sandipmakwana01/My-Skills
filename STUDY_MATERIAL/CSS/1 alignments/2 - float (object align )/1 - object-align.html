@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Align</title>
+    <style>
+        /* float are not work in display flex and grid */
+        .box-1{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border: 2px solid black;
+            float: right;
+        }
+        
+        .box-2{
+            /* float: right; */
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .box-3{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border: 2px solid black;
+            margin: auto;
+        }
+        /* not use to float in inner div */
+        .Outer{
+            border: 2px solid;
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-3">3</div>
+    <div class="box-1">1</div>
+    <div class="box-2">2</div>
+    <div class="Outer">
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+</html>

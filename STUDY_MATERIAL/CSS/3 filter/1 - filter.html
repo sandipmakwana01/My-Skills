@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 200px;
+      }
+      .parent {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .child {
+        margin: 5px;
+        flex-grow: 1;
+      }
+      .child1 {
+        filter: blur(2px);
+      }
+      .child2 {
+        /* 100% default */
+        filter: brightness(50%);
+      }
+      .child3 {
+        /* 100% default */
+        filter: contrast(150%);
+      }
+      .child4 {
+        /*filter:drop-shadow(x y bluernes color) */
+        filter: drop-shadow(10px 10px 10px green);
+      }
+      .child5 {
+        /* 0% to 100% */
+        /* 0% is defualt */
+        filter: grayscale(100%);
+      }
+      .child6{
+        /* 0deg to 360deg */
+        /* 0deg is defualt */
+        filter: hue-rotate(100deg);
+      }
+      .child7{
+        /* 0% to 100% */
+        /* 0% is defualt */
+        filter: invert(100%);
+      }
+      .child8{
+        /* 0% to 100% */
+        /* 100% is defualt */
+        filter: opacity(50%);
+      }
+      .child9{
+        /* 100% default */
+        filter: saturate(200%);
+      }
+      .child10{
+        /* 0% to 100% */
+        /* 0% is defualt */
+        filter: sepia(100%);
+      }
+
+      .child11{
+          /* use multiple vlaue  */
+        filter: blur(1px) hue-rotate(100deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child1">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child2">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child3">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child4">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child5">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child6">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child7">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child8">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child9">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child10">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+      <div class="child child11">
+        <img src="free-nature-images.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

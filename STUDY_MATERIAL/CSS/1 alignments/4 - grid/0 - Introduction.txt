@@ -1,0 +1,10 @@
+- justify-content (use in parent) and justify-items (use in parent) both are work in display grid 
+- align-items (use in parent) and align-content (use in parent) both are work in display grid 
+
+Grid Properties:
+        align-items
+        justify-items
+        place-items
+        align-self
+        justify-self
+        place-self

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Transform - 2D Values:-
+    
+    transform: ;
+    
+    - rotate(deg)
+
+    - translate(px,px)
+    - translateX(px)
+    - translateY(px)
+
+    - scale(n,n)
+    - scaleX(n)
+    - scaleY(n)
+
+    - skew(x-deg,y-deg)
+    - skewX(deg)
+    - skewY(deg)
+
+    - matrix(skewX(),scaleY(),scaleX(),skewY(),translateX(),translateY())
+
+    - none
+    */
+    /* 
+    transform-origin:left top;
+    transform-origin:left bottom;
+    transform-origin:right top;
+    transform-origin:right bottom;
+    transform-origin:20% 40%;
+    transform-origin:20px 40px;
+    */
+
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: gray;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .box1{
+        /* transform: scale() rotate() skew(); */
+        transform: rotate(350deg);
+    }
+    .box2{
+        transform: translate(-200px,40px);
+    }
+    .box3{
+        transform: scaleX(4);
+    }
+    .box4{
+        transform: skew(40deg);
+    }
+    .box5{
+        transform: matrix(1,1,3,1,350,0);
+    }
+
+
+    .box6{
+        transition-property: transform  /* , width*/ ;
+        transition-duration:2s ;
+        transition-delay:0s ;
+
+        transform-origin: left bottom;
+    }
+    .box6:hover{
+        /* transform: scale() rotate() skew(); */
+        transform: scale(2);
+        /* width: 500px; */
+    }
+    
+</style>
+<body>
+    <div class="box box1">rotate</div>
+    <div class="box box2">translate</div>
+    <div class="box box3">scaleX</div>
+    <div class="box box4">skew</div>
+    <div class="box box5">matrix</div>
+    <div class="box box6"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* transition property:- 
+
+        transition-property: ;
+        - width
+        - hight
+        - etc..
+
+        transition-duration: ;
+        - 2s
+        - 500ms
+        - etc..
+
+        transition-delay
+
+        transition-timing-function: ;
+        - ease            (slow start, then fast, then end slowly)
+        - liner           (same speed from start to end)
+        - ease-in         (slow start)
+        - ease-out        (slow end)
+        - ease-in-out     (slow start and end)
+        - step-start
+        - step-end
+        - steps(4,end)
+        - cublic-bezier   (lets you define your own values)
+
+        */
+
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+
+        /* transition-property: width , height , background-color;
+            transition-duration:2s , 5s , 1s; */
+
+        /* shorthend */
+        transition: width 2s, height 5s, background-color 3s;
+
+        /* transition-timing-function: steps(6); */
+        /* no smuth*/
+
+        /*transition-timing-function: cubic-bezier(0.5,0.1,0.5,0.8);*/
+        /*minimum 4 step*/
+        /*smuth*/
+
+        /* transition-delay: 5s; */
+
+
+      }
+      .box:hover {
+        width: 500px;
+        height: 500px;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

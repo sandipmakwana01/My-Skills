@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      /* flex propertise:- 
+      
+        flex-direction: ;
+        - (use in parent)
+        - row (defualt)
+        - row-reverse
+        - column
+        - column-reverse
+        flex-wrap: ;
+        - (use in parent)
+        - nowrap (defualt)
+        - wrap
+        - wrap-reverse
+        flex-flow: ;
+        - (use in parent)
+        - <flex-direction><flex-wrap>
+
+        flex-grow: ;
+        - (use in child)
+        flex-shrink: ;
+        - (use in child)
+        - use 0(0 means no shrink)
+        flex-basis: ;
+        - (use in child)
+        - px 
+        - auto
+        flex: ;
+        - (use in child)
+        - <flex-grow><flex-shrink><flex-basis>
+
+        justify-content: ;
+        - (use in parent)
+        - flex-start (defualt)
+        - flex-end
+        - center
+        - space-around
+        - space-between
+        - space-evenly
+        align-items: ;
+        - (use in parent)
+        - (use single row)
+        - flex-start 
+        - flex-end
+        - center
+        - stretch (defualt)
+        - baseline
+        align-content: ;
+        - (use in parent)
+        - (use double row)
+        - flex-start (defualt)
+        - flex-end
+        - center
+        - stretch
+        - space-around
+        - space-between
+        - space-evenly
+        align-self: ;
+        - (use in child)
+        - auto
+        - flex-start 
+        - flex-end
+        - center
+        - stretch (defualt)
+        - baseline
+        
+        order: ;
+      */
+
+      .parent1{
+        border: 2px solid;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    .parent2{
+        border: 2px solid;
+        height: 500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .child{
+        border: 2px solid;
+        padding: 10px;
+        flex-basis: 100px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="parent parent1">
+      <div class="child child1">1</div>
+      <div class="child child2">2</div>
+      <div class="child child3">3</div>
+      <div class="child child4">4</div>
+      <div class="child child5">5</div>
+      <div class="child child1">6</div>
+      <div class="child child2">7</div>
+      <div class="child child3">8</div>
+      <div class="child child4">9</div>
+      <div class="child child5">10</div>
+    </div>
+    <div class="parent parent2">
+      <div class="child child1">1</div>
+      <div class="child child2">2</div>
+      <div class="child child3">3</div>
+      <div class="child child4">4</div>
+      <div class="child child5">5</div>
+      <div class="child child1">6</div>
+      <div class="child child2">7</div>
+      <div class="child child3">8</div>
+      <div class="child child4">9</div>
+      <div class="child child5">10</div>
+    </div>
+  </body>
+</html>
