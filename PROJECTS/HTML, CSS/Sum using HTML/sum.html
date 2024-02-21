@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Parent {
+        display: flex;
+        flex-flow: column;
+        margin-top: 20%;
+      }
+      .child {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      class="Parent"
+      action=""
+      oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+    >
+      <input class="child" type="number" id="a" value="0" placeholder="Enter Only Number"/>
+      <input class="child" type="number" id="b" value="0" placeholder="Enter Only Number"/>
+      <output class="child" name="x">Answer</output>
+    </form>
+  </body>
+</html>
